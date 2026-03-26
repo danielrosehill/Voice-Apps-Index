@@ -42,6 +42,14 @@ Voice note-taking utility that uses cloud audio multimodal models for single-pas
 
 ---
 
+### Thought Pad
+
+Linux desktop application providing a two-stage process for creating notes from dictated speech — transcription via Whisper API followed by light text formatting. Exports to markdown docs.
+
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Thought-Pad)
+
+---
+
 ## Other Utilities
 
 ### Voice Note Recorder Ubuntu
