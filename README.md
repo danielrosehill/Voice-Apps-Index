@@ -262,6 +262,14 @@ WIP MCP for local STT with cleanup on AMD GPU machines.
 
 ---
 
+### OR Audio Transcription MCP
+
+Open Router-based audio transcription MCP server.
+
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/OR-Audio-Transcription-MCP)
+
+---
+
 ## Evaluations & Benchmarks
 
 ### Whisper Fine Tune Accuracy Eval
