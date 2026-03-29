@@ -320,6 +320,14 @@ Whisper words-per-minute testing.
 
 ---
 
+### Gemini 3.1 Lite Audio Understanding Eval
+
+Evaluation of Gemini 3.1 Lite on audio understanding tasks.
+
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Gemini-31-Lite-Audio-Understanding-Eval)
+
+---
+
 ### Voice Cleanup Prompt Experiment
 
 Testing various permutations in system prompting for raw audio transcript cleanup and comparing multimodal ASR vs. the STT + LLM approach.
