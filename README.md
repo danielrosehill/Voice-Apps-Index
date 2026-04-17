@@ -6,11 +6,16 @@ Index of voice typing, dictation, and speech-to-text applications and utilities.
 
 ---
 
-## In Development
+## Active Projects
+
+Two parallel tracks, each with its own use case:
+
+- **Real-time streaming at cursor** — speak and see text appear as you go, for chat, IDEs, and quick input. Covered by **VoiceType** (hybrid local + cloud) and **Parakeet Type Ubuntu** (local-only proof of concept).
+- **Long-form note dictation** — speak a full note, get back polished, formatted text in one pass. Covered by **AI Typer V2**.
 
 ### VoiceType
 
-Real-time Linux voice keyboard powered by Deepgram streaming ASR. Python + PyQt6, single process, no root (uses evdev uinput via the `input` group). Defaults to Nova-3 with keyterm prompting for accurate technical/proper-noun recognition; Flux is selectable for low-latency conversational use. Features system tray, configurable hotkeys + push-to-talk, VAD to skip silence, and an in-app cost tracking dialog (today / this-week / all-time, optionally scoped to a specific API key). Ships as a `.deb` package.
+The flexible hybrid track — aiming to blend local and cloud STT so the user picks the tradeoff per session (latency, cost, privacy). Currently cloud-only via Deepgram Nova-3 streaming with keyterm prompting; local inference is planned. Python + PyQt6, single-process, no root (evdev uinput via the `input` group). System tray, hotkeys, push-to-talk, VAD, and an in-app cost tracking dialog. Ships as a `.deb` package.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/VoiceType)
 
@@ -18,7 +23,7 @@ Real-time Linux voice keyboard powered by Deepgram streaming ASR. Python + PyQt6
 
 ### Parakeet Type Ubuntu
 
-On-device voice typing for Linux using Parakeet and NeMo ASR models via sherpa-onnx. Built-in punctuation, multiple model profiles, system tray app with configurable hotkeys. No cloud, no GPU required.
+The local-only track — a focused proof of concept for running NVIDIA Parakeet / NeMo ASR models on AMD CPU inference via sherpa-onnx, with no cloud and no GPU required. Built-in punctuation, multiple model profiles, system tray, configurable hotkeys.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Parakeet-Type-Ubuntu)
 
@@ -26,73 +31,19 @@ On-device voice typing for Linux using Parakeet and NeMo ASR models via sherpa-o
 
 ### AI Typer V2
 
-Voice dictation with single-pass multimodal AI cleanup — audio goes directly to Gemini (via OpenRouter), which transcribes and formats in one call. Smart format detection (email / list / notes), VAD + AGC preprocessing, optional second-pass coherence review, custom dictionary with CSV import/export, streaming live-text preview, global F13–F24 hotkeys, append mode, and type-at-cursor that works in terminals as well as GUI apps.
+The long-form dictation track — single-pass multimodal audio understanding (Gemini via OpenRouter) where the model transcribes and formats in one call. Smart format detection (email / list / notes), VAD + AGC preprocessing, optional second-pass coherence review, custom dictionary with CSV import/export, streaming live-text preview, global F13–F24 hotkeys, append mode, and type-at-cursor that works in terminals as well as GUI apps.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Typer-V2)
 
 ---
 
-### Wayland Voice Typer
+## Earlier Iterations
 
-Simple GUI around whisper.cpp for voice-to-text on Linux.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Wayland-Voice-Typer)
-
----
-
-### Quick STT
-
-Optimised always-on STT for Ubuntu with ROCm support.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Quick-STT)
-
----
-
-### hyprvoice
-
-Voice-powered typing for Wayland/Hyprland desktops.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/hyprvoice)
-
----
-
-### Mooshine Dictation App
-
-Moonshine-based dictation application.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Mooshine-Dictation-App-0326)
-
----
-
-### Local STT App
-
-Local speech-to-text application.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Local-STT-App)
-
----
-
-### Voice Typing 1125
-
-Voice typing application iteration.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Typing-1125)
-
----
-
-## Old Iterations
-
-### AI Transcription Notepad
-
-Voice note-taking utility that uses cloud audio multimodal models for single-pass transcription and text cleanup.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Transcription-Notepad)
-
----
+Kept for reference — superseded by the active projects above.
 
 ### Thought Pad
 
-Linux desktop application providing a two-stage process for creating notes from dictated speech — transcription via Whisper API followed by light text formatting. Exports to markdown docs.
+Two-stage process for creating notes from dictated speech — transcription via Whisper API followed by light text formatting. Exports to markdown. Predecessor to AI Typer V2.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Thought-Pad)
 
@@ -100,73 +51,17 @@ Linux desktop application providing a two-stage process for creating notes from 
 
 ### Whisper Typer 0911
 
-Earlier Whisper-based voice typing iteration.
+Early Whisper-based voice typing iteration.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Typer-0911)
 
 ---
 
-### Deepgram Voice Keyboard Ubuntu
-
-WIP STT utility using cloud STT APIs on Ubuntu.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Deepgram-Voice-Keyboard-Ubuntu)
-
----
-
-### Voiceflow V1
-
-Early voice flow implementation.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voiceflow-V1)
-
----
-
-### Voiceflow Dev
-
-Voice flow development iteration.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voiceflow-Dev)
-
----
-
-### Voice Flow Idea Dev
-
-Voice flow idea development workspace.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Flow-Idea-Dev)
-
----
-
-### Whisper Typing Linux 1125
-
-Whisper-based typing tool for Linux.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Typing-Linux-1125)
-
----
-
 ### Voice Keyboard
 
-Voice keyboard application.
+Early voice keyboard prototype.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Keyboard)
-
----
-
-### Android Voice Keyboard
-
-Voice keyboard for Android.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Android-Voice-Keyboard)
-
----
-
-### Voice Notepad Android
-
-Android fork of transcription UI.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Notepad-Android)
 
 ---
 
