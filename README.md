@@ -10,7 +10,7 @@ Index of voice typing, dictation, and speech-to-text applications and utilities.
 
 ### VoiceType
 
-A fork of Deepgram's Linux starter with CLI-to-GUI conversion, hotkey support, API key editing, and cost tracking. Uses Deepgram streaming ASR.
+Real-time Linux voice keyboard powered by Deepgram streaming ASR. Python + PyQt6, single process, no root (uses evdev uinput via the `input` group). Defaults to Nova-3 with keyterm prompting for accurate technical/proper-noun recognition; Flux is selectable for low-latency conversational use. Features system tray, configurable hotkeys + push-to-talk, VAD to skip silence, and an in-app cost tracking dialog (today / this-week / all-time, optionally scoped to a specific API key). Ships as a `.deb` package.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/VoiceType)
 
@@ -26,7 +26,7 @@ On-device voice typing for Linux using Parakeet and NeMo ASR models via sherpa-o
 
 ### AI Typer V2
 
-Voice dictation with multimodal AI cleanup — speak naturally, get polished text. Uses Gemini multimodal audio processing.
+Voice dictation with single-pass multimodal AI cleanup — audio goes directly to Gemini (via OpenRouter), which transcribes and formats in one call. Smart format detection (email / list / notes), VAD + AGC preprocessing, optional second-pass coherence review, custom dictionary with CSV import/export, streaming live-text preview, global F13–F24 hotkeys, append mode, and type-at-cursor that works in terminals as well as GUI apps.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Typer-V2)
 
@@ -581,6 +581,14 @@ Concept for a speech tech solution — specced out by Claude.
 Planning and research for real-time voice typing on Linux (Deepgram, Gemini, Parakeet).
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/linux-realtime-voice-typing)
+
+---
+
+### Live Typing UX Research
+
+Claude-assisted technical research into live voice typing implementation approaches — streaming inference patterns, partial-result handling, turn detection, and UX tradeoffs for at-cursor dictation.
+
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Live-Typing-UX-Research)
 
 ---
 
