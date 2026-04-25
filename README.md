@@ -8,10 +8,11 @@ Index of voice typing, dictation, and speech-to-text applications and utilities.
 
 ## Active Projects
 
-Two parallel tracks, each with its own use case:
+Three parallel tracks, each with its own use case:
 
 - **Real-time streaming at cursor** — speak and see text appear as you go, for chat, IDEs, and quick input. Covered by **VoiceType** (hybrid local + cloud) and **Parakeet Type Ubuntu** (local-only proof of concept).
 - **Long-form note dictation** — speak a full note, get back polished, formatted text in one pass. Covered by **AI Typer V2**.
+- **Android voice-to-text reformatter** — hold-to-talk, single-pass transcription + reformatting into a chosen preset (email, prompt, to-do, Hebrew). Covered by **Voxcast**.
 
 ### VoiceType
 
@@ -34,6 +35,14 @@ The local-only track — a focused proof of concept for running NVIDIA Parakeet 
 The long-form dictation track — single-pass multimodal audio understanding (Gemini via OpenRouter) where the model transcribes and formats in one call. Smart format detection (email / list / notes), VAD + AGC preprocessing, optional second-pass coherence review, custom dictionary with CSV import/export, streaming live-text preview, global F13–F24 hotkeys, append mode, and type-at-cursor that works in terminals as well as GUI apps.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Typer-V2)
+
+---
+
+### Voxcast
+
+The Android mobile track — a hold-to-talk voice-to-text app (Expo / React Native) that transcribes and reformats in a single OpenRouter call (Gemini 3.1 Flash Lite) into one of eight serious presets: business email, AI prompt, dev prompt, basic cleanup, to-do list, note to self, casual Hebrew, and Hebrew email. Email modes return separate subject + body for two-tap copy. One preset active at a time, no layering. Sibling project to Crazy-Keyboard but reframed as a productivity tool.
+
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voxcast)
 
 ---
 
