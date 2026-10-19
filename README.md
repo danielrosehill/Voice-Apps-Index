@@ -10,23 +10,15 @@ Index of voice typing, dictation, and speech-to-text applications and utilities.
 
 Three parallel tracks, each with its own use case:
 
-- **Real-time streaming at cursor** — speak and see text appear as you go, for chat, IDEs, and quick input. Covered by **VoiceType** (hybrid local + cloud) and **Parakeet Type Ubuntu** (local-only proof of concept).
+- **Real-time streaming at cursor** — speak and see text appear as you go, for chat, IDEs, and quick input. Covered by **Parlance** (local-only, Parakeet).
 - **Long-form note dictation** — speak a full note, get back polished, formatted text in one pass. Covered by **AI Typer V2**.
 - **Android voice-to-text reformatter** — hold-to-talk, single-pass transcription + reformatting into a chosen preset (email, prompt, to-do, Hebrew). Covered by **Voxcast**.
 
-### VoiceType
+### Parlance
 
-The flexible hybrid track — aiming to blend local and cloud STT so the user picks the tradeoff per session (latency, cost, privacy). Currently cloud-only via Deepgram Nova-3 streaming with keyterm prompting; local inference is planned. Python + PyQt6, single-process, no root (evdev uinput via the `input` group). System tray, hotkeys, push-to-talk, VAD, and an in-app cost tracking dialog. Ships as a `.deb` package.
+The local-only track — on-device dictation with NVIDIA Parakeet TDT 0.6B v2 via sherpa-onnx (int8), no cloud and no GPU required. Android voice keyboard (IME) plus a Linux/Windows tray app with hotkey or foot-pedal dictation. Choice of stock Parakeet or the English-Hebrew code-switching fine-tune. Replaces Parakeet Type Ubuntu and Voice To Hebrish.
 
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/VoiceType)
-
----
-
-### Parakeet Type Ubuntu
-
-The local-only track — a focused proof of concept for running NVIDIA Parakeet / NeMo ASR models on AMD CPU inference via sherpa-onnx, with no cloud and no GPU required. Built-in punctuation, multiple model profiles, system tray, configurable hotkeys.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Parakeet-Type-Ubuntu)
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Parlance-Dictation)
 
 ---
 
@@ -58,69 +50,13 @@ Two-stage process for creating notes from dictated speech — transcription via 
 
 ---
 
-### Whisper Typer 0911
-
-Early Whisper-based voice typing iteration.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Typer-0911)
-
----
-
-### Voice Keyboard
-
-Early voice keyboard prototype.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Keyboard)
-
----
-
 ## Transcription Tools
-
-### Gemini Audio Transcriber
-
-File upload based multimodal transcription tool using Gemini via Open Router.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Gemini-Audio-Transcriber)
-
----
-
-### Gemini Transcription Notepad
-
-Gemini-powered transcription notepad with cleanup.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Gemini-Transcription-Notepad)
-
----
-
-### Gemini ASR Transcriber
-
-Transcription notepad for Gemini ASR.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Gemini-ASR-Transcriber)
-
----
 
 ### DVR Transcriber
 
 Workflow workspace for importing recordings from a DVR and using AI for transcription.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/DVR-Transcriber)
-
----
-
-### Transcript Creator
-
-Audio cleanup and transcription tool.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Transcript-Creator)
-
----
-
-### Local Multimodal Transcriber
-
-Local transcription app with audio multimodal design.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Local-Multimodal-Transcriber)
 
 ---
 
@@ -147,22 +83,6 @@ MCP server for Gemini multimodal audio transcription with built-in post-processi
 MCP for using various cloud ASR models for speech-to-text and transcription.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Cloud-ASR-MCP)
-
----
-
-### Local AI Transcription MCP
-
-MCP for local AI transcription.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Local-AI-Transcription-MCP)
-
----
-
-### Local Transcription MCP
-
-WIP MCP for local STT with cleanup on AMD GPU machines.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Local-Transcription-MCP)
 
 ---
 
@@ -298,14 +218,6 @@ Fine-tuned STT data formats.
 
 ---
 
-### whisper-wayland-rocm
-
-Whisper-Wayland with ROCm GPU acceleration — Docker setup for AMD GPUs.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/whisper-wayland-rocm)
-
----
-
 ### whisper-cpp-rocm-setup
 
 whisper.cpp ROCm setup scripts.
@@ -349,14 +261,6 @@ Breaks up texts by approximate reading duration for ASR training.
 ---
 
 ## Other Utilities
-
-### Voice Note Recorder Ubuntu
-
-GUI for recording voice notes on Ubuntu/Linux.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Note-Recorder-Ubuntu)
-
----
 
 ### Readiness Voice Agent
 
@@ -406,14 +310,6 @@ Audio processing cleanup script.
 
 ---
 
-### Transcription Macropad
-
-Macropad configuration for transcription workflows.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Transcription-Macropad)
-
----
-
 ### Dictation Macropad
 
 Plan/key allocation for a macropad optimised for heavy daily dictation workflows.
@@ -427,14 +323,6 @@ Plan/key allocation for a macropad optimised for heavy daily dictation workflows
 Planning notes for a macropad for STT users.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voicepad)
-
----
-
-### Voice Typer HW
-
-Voice typer hardware notes.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Typer-HW)
 
 ---
 
@@ -454,14 +342,6 @@ Dictation microphone notes and comparisons.
 
 ---
 
-### speech-notes-with-text-fixes
-
-Speech Note Linux app with text fixes — note taking, reading and translating with offline STT, TTS, and machine translation.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/speech-notes-with-text-fixes)
-
----
-
 ### Hebrish Whisper Tester
 
 Testing Whisper with Hebrew-English mixed speech.
@@ -477,14 +357,6 @@ Testing Whisper with Hebrew-English mixed speech.
 Concept for a speech tech solution — specced out by Claude.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/VoiceBox)
-
----
-
-### Linux Realtime Voice Typing
-
-Planning and research for real-time voice typing on Linux (Deepgram, Gemini, Parakeet).
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/linux-realtime-voice-typing)
 
 ---
 
@@ -557,14 +429,6 @@ Collection of voice typing / STT GitHub repos for testing on Linux.
 Useful speech-to-text tools that use Whisper under the hood (API/local).
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Awesome-Whisper-Apps)
-
----
-
-### Voiceflow Planner
-
-Voiceflow planning notes.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voiceflow-Planner)
 
 ---
 
