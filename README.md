@@ -1,6 +1,6 @@
 # Voice Apps Index
 
-[![Master Index](https://img.shields.io/badge/Master_Index-GitHub-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Index)
+[![Master Index](https://img.shields.io/badge/Master_Index-GitHub-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Start-Here)
 
 Index of voice typing, dictation, and speech-to-text applications and utilities.
 
