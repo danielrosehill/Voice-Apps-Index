@@ -4,6 +4,8 @@
 
 Index of voice typing, dictation, and speech-to-text applications and utilities.
 
+**Last Updated:** October 2026
+
 ---
 
 ## Active Projects
@@ -11,7 +13,7 @@ Index of voice typing, dictation, and speech-to-text applications and utilities.
 Three parallel tracks, each with its own use case:
 
 - **Real-time streaming at cursor** — speak and see text appear as you go, for chat, IDEs, and quick input. Covered by **Parlance** (local-only, Parakeet).
-- **Long-form note dictation** — speak a full note, get back polished, formatted text in one pass. Covered by **AI Typer V2**.
+- **Long-form note dictation** — speak a full note, get back polished, formatted text in one pass. Covered by **Voxtype**.
 - **Android voice-to-text reformatter** — hold-to-talk, single-pass transcription + reformatting into a chosen preset (email, prompt, to-do, Hebrew). Covered by **Voxcast**.
 
 ### Parlance
@@ -22,11 +24,11 @@ The local-only track — on-device dictation with NVIDIA Parakeet TDT 0.6B v2 vi
 
 ---
 
-### AI Typer V2
+### Voxtype
 
 The long-form dictation track — single-pass multimodal audio understanding (Gemini via OpenRouter) where the model transcribes and formats in one call. Smart format detection (email / list / notes), VAD + AGC preprocessing, optional second-pass coherence review, custom dictionary with CSV import/export, streaming live-text preview, global F13–F24 hotkeys, append mode, and type-at-cursor that works in terminals as well as GUI apps.
 
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Typer-V2)
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voxtype)
 
 ---
 
@@ -57,14 +59,6 @@ Two-stage process for creating notes from dictated speech — transcription via 
 Workflow workspace for importing recordings from a DVR and using AI for transcription.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/DVR-Transcriber)
-
----
-
-### ASR Transcription Pipeline
-
-ASR transcription pipeline.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/ASR-Transcription-Pipeline)
 
 ---
 
@@ -136,14 +130,6 @@ Quick evaluation to find the best STT model in Speech Note (Ubuntu) for local ha
 
 ---
 
-### Whisper WPM Test
-
-Whisper words-per-minute testing.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-WPM-Test)
-
----
-
 ### Gemini 3.1 Lite Audio Understanding Eval
 
 Evaluation of Gemini 3.1 Lite on audio understanding tasks.
@@ -162,75 +148,11 @@ Testing various permutations in system prompting for raw audio transcript cleanu
 
 ## Whisper Fine-Tuning & Setup
 
-### Whisper Finetune V2
-
-Whisper fine-tuning iteration.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Finetune-V2)
-
----
-
 ### Modal Whisper Finetune Script
 
 Validated fine-tuning script for fine-tuning Whisper on Modal GPU with a preformatted audio dataset.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Modal-Whisper-Finetune-Script)
-
----
-
-### Whisper Fine Tuning Data
-
-Whisper fine-tuning dataset.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Fine-Tuning-Data)
-
----
-
-### Whisper Fine Tune 171125
-
-Whisper fine-tuning iteration.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Fine-Tune-171125)
-
----
-
-### Whisper Base FUTO
-
-Whisper base model via FUTO.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Base-FUTO)
-
----
-
-### Local STT Fine Tune Tests
-
-Local STT fine-tuning tests.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Local-STT-Fine-Tune-Tests)
-
----
-
-### Fine Tuned STT Formats
-
-Fine-tuned STT data formats.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Fine-Tuned-STT-Formats)
-
----
-
-### whisper-cpp-rocm-setup
-
-whisper.cpp ROCm setup scripts.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/whisper-cpp-rocm-setup)
-
----
-
-### Whisper Local Notes
-
-Notes on local Whisper usage.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Whisper-Local-Notes)
 
 ---
 
@@ -241,14 +163,6 @@ Notes on local Whisper usage.
 GUI to facilitate gathering training data for ASR/STT apps in organised datasets with audio capture, text capture, and JSONL metadata construction. Supports LLM-generated text and user-provided.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/ASR-Training-Data-Collector)
-
----
-
-### ASR Training Data Collector GUI Template
-
-GUI template for ASR training data collection.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/ASR-Training-Data-Collector-GUI-Template)
 
 ---
 
@@ -267,30 +181,6 @@ Breaks up texts by approximate reading duration for ASR training.
 Voice agent implementation for readiness checklists.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Readiness-Voice-Agent)
-
----
-
-### Voice Note Classification Model
-
-Model for classifying voice notes.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Note-Classification-Model)
-
----
-
-### Voice Note Classifier Model
-
-Voice note classifier model.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Note-Classifier-Model)
-
----
-
-### Voice Note Dataset
-
-Frontend for open source voice note dataset for annotation/classification project.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Note-Dataset)
 
 ---
 
@@ -323,30 +213,6 @@ Plan/key allocation for a macropad optimised for heavy daily dictation workflows
 Planning notes for a macropad for STT users.
 
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voicepad)
-
----
-
-### Voice Headset Design
-
-Voice headset design notes.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Voice-Headset-Design)
-
----
-
-### Dictation Microphones
-
-Dictation microphone notes and comparisons.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Dictation-Microphones)
-
----
-
-### Hebrish Whisper Tester
-
-Testing Whisper with Hebrew-English mixed speech.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Hebrish-Whisper-Tester)
 
 ---
 
@@ -400,11 +266,11 @@ Prompts and outputs on STT, ASR, and fine-tuning with Claude.
 
 ---
 
-### Linux Friendly Voice Tech
+### Linux Voice Tech
 
 List of resources for voice technology with Linux support, encompassing STT, ASR, and dev frameworks.
 
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Linux-Friendly-Voice-Tech)
+[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Linux-Voice-Tech)
 
 ---
 
@@ -416,14 +282,6 @@ Claude-enhanced research for voice control platforms with Linux support.
 
 ---
 
-### voice-typing-collection
-
-Collection of voice typing / STT GitHub repos for testing on Linux.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/voice-typing-collection)
-
----
-
 ### Awesome Whisper Apps
 
 Useful speech-to-text tools that use Whisper under the hood (API/local).
@@ -431,9 +289,3 @@ Useful speech-to-text tools that use Whisper under the hood (API/local).
 [![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Awesome-Whisper-Apps)
 
 ---
-
-### STT TTS Train 1125
-
-STT and TTS training notes.
-
-[![View Repo](https://img.shields.io/badge/View_Repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/danielrosehill/STT-TTS-Train-1125)
